@@ -6,6 +6,7 @@ This project implements a modular, production-ready machine learning pipeline fo
 The system is fully configurable through a single YAML file and requires no code changes to switch between targets, enable/disable models, or adjust hyperparameters. Every stage  from data preprocessing to model evaluation is reproducible, automated, and designed for scalability.
 
 
+Stock_Market/
 ├── data/ # Raw and processed datasets
 ├── config/
 │ └── config.yaml # Pipeline settings, file paths, targets, splits, and model parameters
@@ -13,11 +14,11 @@ The system is fully configurable through a single YAML file and requires no code
 │ ├── data_preprocessing.py # Cleans, imputes missing values, filters outliers
 │ ├── feature_engineering.py # Constructs domain-specific and statistical features
 │ ├── models/
-│ │ ├── random_forest.py
-│ │ ├── logistic_regression.py
-│ │ ├── svm.py
-│ │ ├── decision_tree.py
-│ │ └── gradient_boosting.py
+│ ├── random_forest.py
+│ ├── logistic_regression.py
+│ ├── svm.py
+│ ├── decision_tree.py
+│ └── gradient_boosting.py
 │ ├── evaluation.py # Model scoring, visual reports, and metric aggregation
 │ └── utils.py # Config loader, logger, I/O helpers, and serialization routines
 ├── results/ # Auto-generated model metrics, plots, and evaluation summaries
