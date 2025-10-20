@@ -1,9 +1,11 @@
 Stock Market Movement Prediction Pipeline
 
 Overview:
-This project implements a modular, production-ready machine learning pipeline for predicting annual stock price movements and key financial metrics (such as Earnings Per Share, returns, or valuation ratios) for NSE 500 companies.
+A modular, production-ready machine learning pipeline for predicting annual stock price movements and key financial metrics (such as Earnings Per Share, returns, or valuation ratios) for NSE 500 companies.
+The system is fully configurable through a single YAML file and requires no code changes to switch between targets, enable/disable models, or adjust hyperparameters. Every stage—from data preprocessing to model evaluation—is reproducible, automated, and designed for scalability.
 
-The system is fully configurable through a single YAML file and requires no code changes to switch between targets, enable/disable models, or adjust hyperparameters. Every stage  from data preprocessing to model evaluation is reproducible, automated, and designed for scalability.
+Data Source:
+This project uses comprehensive financial data from Prowess, a database by CMIE (Centre for Monitoring Indian Economy) containing detailed financial statements, stock prices, and operational metrics for Indian companies including the NSE 500.
 
 
 <pre>
