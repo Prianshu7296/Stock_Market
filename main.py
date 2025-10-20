@@ -25,7 +25,7 @@ def get_task_type(y):
         return "unknown"
 
 def main():
-    config = load_config("configs/config.yaml")
+    config = load_config("configs/config.YAML")
     X, y = get_processed_data(config['data_path'], target_column=config['target_column'])
     X = feature_engineering_pipeline(X)
 
