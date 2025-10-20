@@ -9,14 +9,43 @@ This project uses comprehensive financial data from Prowess, a database by CMIE 
 
  “Dataset not included due to privacy/compliance. The pipeline, code, and config are fully documented. Provide your own data in the specified format to run end-to-end".
  
- Key Highlights:
+### Key Highlights:
 
-### Automatic Task Detection: Intelligently switches between classification (stock up/down) and regression (continuous value prediction) based on your target column
-### Zero-Code Configuration: Fully configurable through a single YAML file—switch targets, models, and hyperparameters without touching code
-### Modular Architecture: Clean separation of preprocessing, feature engineering, training, and evaluation##
-### Production-Ready: Docker containerization + CI/CD with GitHub Actions
-### Comprehensive Evaluation: ROC-AUC, F1/F2, Precision/Recall for classification; R², MAE, RMSE for regression
-### Reproducible: Every stage is logged, versioned, and designed for scalability
+ Automatic Task Detection: Intelligently switches between classification (stock up/down) and regression (continuous value prediction) based on your target column
+ Zero-Code Configuration: Fully configurable through a single YAML file—switch targets, models, and hyperparameters without touching code
+ Modular Architecture: Clean separation of preprocessing, feature engineering, training, and evaluation##
+ Production-Ready: Docker containerization + CI/CD with GitHub Actions
+ Comprehensive Evaluation: ROC-AUC, F1/F2, Precision/Recall for classification; R², MAE, RMSE for regression
+ Reproducible: Every stage is logged, versioned, and designed for scalability
+
+### Quick Start
+Prerequisites:
+Python 3.11 or higher
+pip package manager
+Docker (optional, for containerized deployment)
+
+Installation
+Clone the repository
+bashgit clone https://github.com/yourusername/stock-market-pipeline.git
+cd stock-market-pipeline
+
+Install dependencies
+bashpip install -r requirements.txt
+
+Prepare your data
+Place your financial data CSV in data/
+
+
+Configure the pipeline
+bash# Edit config/config.yaml
+nano config/config.yaml
+
+Usage:
+Run the complete pipeline:
+bashpython main.py
+
+View results:
+Metrics: results/metrics/
 
 <pre>
 Stock_Market/
@@ -51,16 +80,16 @@ Stock_Market/
 |-- Dockerfile                      # For deployment purposes
 |-- .gitignore
 </pre>
-Pipeline Description:
+
+### Pipeline Description:
 1. Configuration (config.YAML)
-All settings are centralized here — data paths, target column(s), problem type (classification or regression), model toggles, hyperparameters, and output options.
+All settings are centralized here — data paths, target column(s), model toggles, hyperparameters, and output options.
 
 2. Data Preprocessing (src/data_preprocessing.py)
 Cleans and merges multiple financial data sources.
 Handles missing values via smart imputation (mean/median or interpolation).
 Removes duplicate and high-correlation features using Variance Inflation Factor (VIF) thresholds.
 Detects and filters statistical outliers via interquartile range or z-score techniques.
-Outputs a clean, analysis-ready dataset to data/processed/.
 
 3. Feature Engineering (src/feature_engineering.py)
 Generates domain-specific and temporal features, including:
