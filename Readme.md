@@ -7,6 +7,7 @@ The system is fully configurable through a single YAML file and requires no code
 Data Source:
 This project uses comprehensive financial data from Prowess, a database by CMIE (Centre for Monitoring Indian Economy) containing detailed financial statements, stock prices, and operational metrics for Indian companies including the NSE 500.
 
+ ## “Dataset not included due to privacy/compliance. The pipeline, code, and config are fully documented. Provide your own data in the specified format to run end-to-end".
 
 <pre>
 Stock_Market/
