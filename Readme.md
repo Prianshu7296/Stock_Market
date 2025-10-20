@@ -8,6 +8,15 @@ Data Source:
 This project uses comprehensive financial data from Prowess, a database by CMIE (Centre for Monitoring Indian Economy) containing detailed financial statements, stock prices, and operational metrics for Indian companies including the NSE 500.
 
  “Dataset not included due to privacy/compliance. The pipeline, code, and config are fully documented. Provide your own data in the specified format to run end-to-end".
+ 
+ Key Highlights:
+
+### Automatic Task Detection: Intelligently switches between classification (stock up/down) and regression (continuous value prediction) based on your target column
+### Zero-Code Configuration: Fully configurable through a single YAML file—switch targets, models, and hyperparameters without touching code
+### Modular Architecture: Clean separation of preprocessing, feature engineering, training, and evaluation##
+### Production-Ready: Docker containerization + CI/CD with GitHub Actions
+### Comprehensive Evaluation: ROC-AUC, F1/F2, Precision/Recall for classification; R², MAE, RMSE for regression
+### Reproducible: Every stage is logged, versioned, and designed for scalability
 
 <pre>
 Stock_Market/
