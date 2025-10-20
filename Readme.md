@@ -6,6 +6,7 @@ This project implements a modular, production-ready machine learning pipeline fo
 The system is fully configurable through a single YAML file and requires no code changes to switch between targets, enable/disable models, or adjust hyperparameters. Every stage  from data preprocessing to model evaluation is reproducible, automated, and designed for scalability.
 
 
+<pre>
 Stock_Market/
 |
 |-- data/                           # Raw and processed datasets
@@ -37,7 +38,7 @@ Stock_Market/
 |-- README.md
 |-- Dockerfile                      # For deployment purposes
 |-- .gitignore
-
+</pre>
 Pipeline Description:
 1. Configuration (config.YAML)
 All settings are centralized here — data paths, target column(s), problem type (classification or regression), model toggles, hyperparameters, and output options.
