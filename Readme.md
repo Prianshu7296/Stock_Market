@@ -26,7 +26,9 @@ Docker (optional, for containerized deployment)
 
 Installation
 Clone the repository
-bashgit clone https://github.com/yourusername/stock-market-pipeline.git
+```bash
+git clone https://github.com/...
+```
 cd stock-market-pipeline
 
 Install dependencies
