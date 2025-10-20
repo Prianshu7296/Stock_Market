@@ -1,4 +1,4 @@
-Stock Market Movement Prediction Pipeline
+### Stock Market Movement Prediction Pipeline
 
 Overview:
 A modular, production-ready machine learning pipeline for predicting annual stock price movements and key financial metrics (such as Earnings Per Share, returns, or valuation ratios) for NSE 500 companies.
