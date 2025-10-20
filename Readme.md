@@ -11,12 +11,12 @@ This project uses comprehensive financial data from Prowess, a database by CMIE 
  
 ### Key Highlights:
 
- Automatic Task Detection: Intelligently switches between classification (stock up/down) and regression (continuous value prediction) based on your target column
- Zero-Code Configuration: Fully configurable through a single YAML file—switch targets, models, and hyperparameters without touching code
- Modular Architecture: Clean separation of preprocessing, feature engineering, training, and evaluation##
- Production-Ready: Docker containerization + CI/CD with GitHub Actions
- Comprehensive Evaluation: ROC-AUC, F1/F2, Precision/Recall for classification; R², MAE, RMSE for regression
- Reproducible: Every stage is logged, versioned, and designed for scalability
+ - Automatic Task Detection: Intelligently switches between classification (stock up/down) and regression (continuous value prediction) based on your target column
+ - Zero-Code Configuration: Fully configurable through a single YAML file—switch targets, models, and hyperparameters without touching code
+ - Modular Architecture: Clean separation of preprocessing, feature engineering, training, and evaluation##
+ - Production-Ready: Docker containerization + CI/CD with GitHub Actions
+ - Comprehensive Evaluation: ROC-AUC, F1/F2, Precision/Recall for classification; R², MAE, RMSE for regression
+ - Reproducible: Every stage is logged, versioned, and designed for scalability
 
 ### Quick Start
 Prerequisites:
@@ -32,22 +32,26 @@ git clone https://github.com/...
 cd stock-market-pipeline
 
 Install dependencies
-bashpip install -r requirements.txt
+```bash
+ pip install -r requirements.txt
+```
 
-Prepare your data
-Place your financial data CSV in data/
+- Prepare your data
+- Place your financial data CSV in data/
 
 
 Configure the pipeline
-bash# Edit config/config.yaml
-nano config/config.yaml
+- bash# Edit config/config.yaml
+- nano config/config.yaml
 
 Usage:
 Run the complete pipeline:
-bashpython main.py
+```bash
+python main.py
+```
 
 View results:
-Metrics: results/metrics/
+- Metrics: results/metrics/
 
 <pre>
 Stock_Market/
