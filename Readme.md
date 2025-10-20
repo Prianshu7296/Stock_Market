@@ -7,31 +7,39 @@ The system is fully configurable through a single YAML file and requires no code
 
 
 Stock_Market/
-├── data/ # Raw and processed datasets
-├── config/
-│ └── config.yaml # Pipeline settings, file paths, targets, splits, and model parameters
-├── src/
-│ ├── data_preprocessing.py # Cleans, imputes missing values, filters outliers
-│ ├── feature_engineering.py # Constructs domain-specific and statistical features
-│ ├── models/
-│ ├── random_forest.py
-│ ├── logistic_regression.py
-│ ├── svm.py
-│ ├── decision_tree.py
-│ └── gradient_boosting.py
-│ ├── evaluation.py # Model scoring, visual reports, and metric aggregation
-│ └── utils.py # Config loader, logger, I/O helpers, and serialization routines
-├── results/ # Auto-generated model metrics, plots, and evaluation summaries
-├── main.py # End-to-end orchestrator integrating all modules via config
-├── notebooks/
-│ └── main.ipynb # Interactive demo / visualization notebook
-├── requirements.txt # Project dependencies
-├── README.md
-├── Dockerfile # This file is for deployment purpose
-└── .gitignore
+|
+|-- data/                           # Raw and processed datasets
+|
+|-- config/
+|   |-- config.yaml                 # Pipeline settings, file paths, targets, splits, and model parameters
+|
+|-- src/
+|   |-- data_preprocessing.py       # Cleans, imputes missing values, filters outliers
+|   |-- feature_engineering.py      # Constructs domain-specific and statistical features
+|   |-- models/
+|   |   |-- random_forest.py
+|   |   |-- logistic_regression.py
+|   |   |-- svm.py
+|   |   |-- decision_tree.py
+|   |   |-- gradient_boosting.py
+|   |
+|   |-- evaluation.py               # Model scoring, visual reports, and metric aggregation
+|   |-- utils.py                    # Config loader, logger, I/O helpers, and serialization routines
+|
+|-- results/                        # Auto-generated model metrics, plots, and evaluation summaries
+|
+|-- main.py                         # End-to-end orchestrator integrating all modules via config
+|
+|-- notebooks/
+|   |-- main.ipynb                  # Interactive demo / visualization notebook
+|
+|-- requirements.txt                # Project dependencies
+|-- README.md
+|-- Dockerfile                      # For deployment purposes
+|-- .gitignore
 
 Pipeline Description:
-1. Configuration (config.yaml)
+1. Configuration (config.YAML)
 All settings are centralized here — data paths, target column(s), problem type (classification or regression), model toggles, hyperparameters, and output options.
 
 2. Data Preprocessing (src/data_preprocessing.py)
