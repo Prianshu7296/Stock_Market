@@ -18,7 +18,15 @@ This project uses comprehensive financial data from Prowess, a database by CMIE 
  - Comprehensive Evaluation: ROC-AUC, F1/F2, Precision/Recall for classification; R², MAE, RMSE for regression
  - Reproducible: Every stage is logged, versioned, and designed for scalability
 
-### Sample Results
+### Sample Results:
+### Classification Performance: ROC Curve
+<img width="790" height="690" alt="image" src="https://github.com/user-attachments/assets/7d62318b-ad03-44ee-8188-4af7d625305b" />
+
+ROC Curve comparing model performance for stock movement classification.  
+Gradient Boosting and Random Forest achieved the highest AUC (>0.96),  
+outperforming linear and kernel-based classifiers.  
+Dashed line shows random chance baseline (AUC=0.5).
+
 
 ### Quick Start
 Prerequisites:
