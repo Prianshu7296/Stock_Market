@@ -23,9 +23,15 @@ This project uses comprehensive financial data from Prowess, a database by CMIE 
 <img width="790" height="690" alt="image" src="https://github.com/user-attachments/assets/7d62318b-ad03-44ee-8188-4af7d625305b" />
 
 ROC Curve comparing model performance for stock movement classification.  
-Gradient Boosting and Random Forest achieved the highest AUC (>0.96),  
+Gradient Boosting and Random Forest achieved the highest AUC (>0.85),  
 outperforming linear and kernel-based classifiers.  
 Dashed line shows random chance baseline (AUC=0.5).
+
+### Regression Performance: Residuals Distribution
+<img width="543" height="455" alt="image" src="https://github.com/user-attachments/assets/e8388af7-05e5-4e75-9330-d1f9fbc9cedc" />
+In the regression test run, Gradient Boosting delivered the highest predictive performance among all models, based on R² and error metrics
+outperforming linear and kernel-based classifiers.
+
 
 
 ### Quick Start
