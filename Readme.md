@@ -29,6 +29,7 @@ Dashed line shows random chance baseline (AUC=0.5).
 
 ### Regression Performance: Residuals Distribution
 <img width="543" height="455" alt="image" src="https://github.com/user-attachments/assets/e8388af7-05e5-4e75-9330-d1f9fbc9cedc" />
+
 In the regression test run, Gradient Boosting delivered the highest predictive performance among all models, based on R² and error metrics
 outperforming linear and kernel-based classifiers.
 
