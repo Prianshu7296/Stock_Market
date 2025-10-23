@@ -18,6 +18,8 @@ This project uses comprehensive financial data from Prowess, a database by CMIE 
  - Comprehensive Evaluation: ROC-AUC, F1/F2, Precision/Recall for classification; R², MAE, RMSE for regression
  - Reproducible: Every stage is logged, versioned, and designed for scalability
 
+### Sample Results
+
 ### Quick Start
 Prerequisites:
 Python 3.11 or higher
