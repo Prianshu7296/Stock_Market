@@ -1,0 +1,46 @@
+data_path: "D:/Stock_Market/Data/stacked_yearwise_output.xlsx"
+model_dir: "D:/Stock_Market/src/models/"
+results_dir: "D:/Stock_Market/Results"
+target_column: "CP"
+
+test_size: 0.2
+random_seed: 42
+
+models:
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    random_state: 42
+  logistic_regression:
+    max_iter: 2000
+    solver: lbfgs
+    random_state: 42
+  svm:
+    regression:
+      kernel:
+        - rbf
+        - poly
+      C:
+        - 0.1
+        - 1
+        - 10
+        - 100
+      gamma:
+        - scale
+        - auto
+        - 0.1
+        - 1
+    binary:
+      kernel:
+        - rbf
+      C:
+        - 1.0
+      gamma:
+        - scale
+  decision_tree:
+    max_depth: 5
+    random_state: 42
+  gradient_boosting:
+    learning_rate: 0.1
+    n_estimators: 100
+    random_state: 42

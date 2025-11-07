@@ -1,0 +1,31 @@
+# Python virtual environments
+ml_env/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data and model files
+data/
+results/
+*.csv
+*.xlsx
+*.pkl
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code and IDE settings
+.vscode/
+.idea/
+.vs/
+
+# System files
+.DS_Store
+
+# Docker
+*.log
+
+# README: Do not track sensitive data or huge datasets. Add or remove data/ if you want to share sample data.
