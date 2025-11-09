@@ -20,7 +20,8 @@ This project uses comprehensive financial data from Prowess, a database by CMIE 
 
 ### Sample Results:
 ### Classification Performance: ROC Curve
-<img width="1440" height="1080" alt="image" src="https://github.com/user-attachments/assets/0e4a4f91-9979-4d4d-8b15-09f54a311c7b" />
+<img width="2400" height="1600" alt="image" src="https://github.com/user-attachments/assets/648b0f7b-9d53-47af-98ef-b7b16c08d2bd" />
+
 
 
 ROC Curve comparing model performance for stock movement classification.  
