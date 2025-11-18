@@ -100,7 +100,7 @@ Stock_Market/
 
 ### Pipeline Description:
 1. Configuration (config.YAML)
-All settings are centralized here — data paths, target column(s), model toggles, hyperparameters, and output options.
+All settings are centralized here, data paths, target column(s), model toggles, hyperparameters, and output options.
 
 2. Data Preprocessing (src/data_preprocessing.py)
 Cleans and merges multiple financial data sources.
