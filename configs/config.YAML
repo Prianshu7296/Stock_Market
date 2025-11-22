@@ -1,6 +1,6 @@
-data_path: "D:/Stock_Market/Data/stacked_yearwise_output.xlsx"
-model_dir: "D:/Stock_Market/src/models/"
-results_dir: "D:/Stock_Market/Results"
+data_path: "./data/stacked_yearwise_output.xlsx"
+model_dir: "./src/models/"
+results_dir: "./results"
 target_column: "CP"
 
 test_size: 0.2
